@@ -14,21 +14,21 @@ export const Sidebar = ({
 
   const breakpointStyle = breakPoint => {
     switch (breakPoint) {
-			case "sm":
-				return "md:flex md:translate-x-0 md:relative";
-			case "md":
-				return "lg:flex lg:translate-x-0 lg:relative";
-			case "lg":
-				return "xl:flex xl:translate-x-0 xl:relative";
-			case "xl":
-				return "2xl:flex 2xl:translate-x-0 2xl:relative";
-			case "2xl":
-				return "";
-			case "none":
-				return "flex !translate-x-0 relative";
-			default:
-				return "lg:flex lg:translate-x-0 lg:relative";
-		}
+      case 'sm':
+        return 'md:flex md:translate-x-0 md:relative'
+      case 'md':
+        return 'lg:flex lg:translate-x-0 lg:relative'
+      case 'lg':
+        return 'xl:flex xl:translate-x-0 xl:relative'
+      case 'xl':
+        return '2xl:flex 2xl:translate-x-0 2xl:relative'
+      case '2xl':
+        return ''
+      case 'none':
+        return 'flex !translate-x-0 relative'
+      default:
+        return 'lg:flex lg:translate-x-0 lg:relative'
+    }
   }
 
   return (
@@ -45,4 +45,3 @@ export const Sidebar = ({
     </aside>
   )
 }
-
